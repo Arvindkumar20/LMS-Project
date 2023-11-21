@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="fav_icon" href="icon.jpg" style="border-radius: 10px;">
+</head>
+
+<body style="background-color: rgb(244, 234, 208);">
+    <div class="bdy">
+
+        <div id="top">
+            <i class="fas fa-book-open"></i>
+            <!-- Heading -->
+
+            Library Management System
+        </div>
+        <div id="nav">
+            <div>
+
+                <!-- Navbar -->
+                <navbar class="container">
+                    <!-- <ul>
+                        <li class="line"></li>
+                        <li class="line2"></li>
+                        <li class="line"></li>
+                        <li>Home</li>
+                        <li>All books</li>
+                        <li>Contact Us</li>
+                        
+                    </ul> -->
+                    <div id="space"><a href="#" style="color: white; text-decoration: none;">Home</a></div>
+                    <div id="space"><a href="#page2" target="_blank" class="crs" style="text-decoration: none;">All
+                            Books</a>
+                    </div>
+                    <diV id="space"><a href="#a" style="color: white; text-decoration: none;">ContactUs</a></diV>
+                    <diV id="space"><a href="signup.html" style="color: white; text-decoration: none;">User_Signup</a>
+                    </diV>
+
+                    <div id="space"><a href="#E" style="color: white; text-decoration: none;">Help</a></div>
+                </navbar>
+            </div>
+            <P>WELCOME TO OUR LIBRARY WORLD</P>
+            <span>
+                <!-- SEARCH BAR  -->
+                <form class="example" action="/action_page.php">
+                    <input type="text" placeholder="Search Book" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </span>
+            <button id="rg"><a href="registration.html">Registration</a></button>
+        </div>
+        <!-- ALL BOOKS FOR READ AND BORROW  -->
+
+        <div id="page2">
+            All Books
+            <hr>
+            <div class="tb">
+
+                <!-- TRENDING BOOKS  -->
+
+                <h6>Trending Books</h6>
+            </div>
+            <div class="slide">
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b1.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html" style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b2.jpg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b3.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b4.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b6.jpg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b5.jpg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                </div>
+
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b6.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b11.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b9.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b10.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b19.jpeg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b12.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bb">
+
+                <!-- BCA BOOKS  -->
+
+                <H6> BCA Books</H6>
+            </div>
+            <div class="slide">
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b13.jpeg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b14.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="PROGRAMMING.pdf" style="text-decoration: none; color: white;">Read</a>
+                        </div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b15.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b16.jpg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b19.jpeg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b18.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+                </div>
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b17.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="OPERATING_SYSTEMS.pdf"
+                                style="text-decoration: none; color: white;">Read</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b20.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b21.png); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b22.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b23.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b24.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mb">
+
+                <!-- MCA BOOKS  -->
+
+                <H6> MCA Books</H6>
+            </div>
+            <div class="slide">
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b19.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="OPERATING_SYSTEMS.pdf"
+                                style="text-decoration: none; color: white;">Read</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca1.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca2.jpeg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca3.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca1.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b5.jpg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+                </div>
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b1.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca3.jpeg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca1.jpeg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b4.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/mca2.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b2.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bb">
+
+                <!-- B.COM BOOKS  -->
+
+                <H6> B.COM Books</H6>
+            </div>
+            <div class="slide">
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/bcom1.jpeg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom2.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b5.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom1.jpeg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom3.jpeg); background-size: cover;">
+                        <div id="BUT2">Not in Library</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom4.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+                </div>
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b1.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom3.jpeg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom2.jpeg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b4.jpg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/bcom4.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b2.jpg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bb">
+
+                <!-- B.TECH BOOKS -->
+
+                <H6> B.TECH Books</H6>
+            </div>
+            <div class="slide">
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b22.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b21.png); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b2.jpg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b3.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b13.jpeg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b19.jpeg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div>
+                </div>
+                <div id="section1">
+                    <div id="book" style="background-image: url(books/b7.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b5.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b6.jpg); background-size: cover;">
+                        <div id="BUT2">Checked out</div>
+                    </div>
+
+                     <div id="book" style="background-image: url(books/b4.jpg); background-size: cover;">
+                        <div id="BUT">Read</div>
+                    </div> 
+
+                    <div id="book" style="background-image: url(books/b19.jpeg); background-size: cover;">
+                        <div id="BUT"><a href="OPERATING_SYSTEMS.pdf"
+                                style="text-decoration: none; color: white;">Read</a></div>
+                    </div>
+
+                    <div id="book" style="background-image: url(books/b2.jpg); background-size: cover;">
+                        <div id="BUT"><a href="signup.html"style="color: white; text-decoration: none;">Borrow</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="page3">
+
+<!-- CONTACT AREA FEEDBACK HELP SOCIAL MEDIA  -->
+
+            <div id="contact">
+                ContactUs
+                <hr>
+            </div>
+
+            <p id="p2">Send Us a Feedback </p>
+            <div id="a">
+                <input type="text" placeholder="Full_Name" class="l1">
+                <input type="text" placeholder="Email" class="l2">
+                <input type="Number" placeholder="Mob.Number" class="l3">
+                <textarea
+                    style="height: 100px; margin-top: 10px; padding-top: 30px; padding-left: 10px;">MESSAGE</textarea>
+                <button id="bt">FEEDBACK</button>
+            </div>
+        </div>
+        <div class="page4">
+            <footer class="ftr">
+                <div class="foot">
+                    <div class="footer-content">
+                        <h3>Contact Info</h3>
+                        <li id="E"><i class="fa-regular fa-envelope"></i> Email: ssahuji910@gmail.com</li>
+                        <li id="E"><i class="fa-solid fa-phone"></i> Phone: 9648****43</li>
+                        <li id="E"><i class="fa-solid fa-house"></i> Address: Lucknow</li>
+                    </div>
+                    <div class="footer-content">
+                        <ul class="list">
+                            <h3>Qick link</h3>
+                            <li><a href="#nav" style="color:rgb(32, 32, 171); text-decoration: none;">Home</a></li>
+                            <li><a href="#a" style="color:rgb(32, 32, 171); text-decoration: none;">ContactUs</a></li>
+                            <li><a href="#page2" style="color:rgb(32, 32, 171); text-decoration: none;">All Books</a>
+                            </li>
+                            <li><a href="signup.html"
+                                    style="color:rgb(32, 32, 171); text-decoration: none;">User_SignUp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-content">
+                        <h3>Follow Us</h3>
+                        <li id="f"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    </div>
+                    <div class="footer-content">
+                        <h3>Help</h3>
+                        <li id="E">Help Center</li>
+                        <li id="E">Report a Probleam</li>
+                        <div class="last">
+                        <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="page6">
+            <li class="bottom">&copy:2023 Your company .All right reserved</li>
+            <hr>
+        </div>
+
+<!-- SCRIPT TAG FOR NEXT BOOKS VIEW -->
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.slide').slick();
+        </script>
+    </div>
+</body>
+
+</html>
