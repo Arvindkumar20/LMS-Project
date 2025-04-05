@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     
@@ -76,3 +77,142 @@
 </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project WorkShop</title>
+    <script type="text/javascript" src="msg.js"></script>  
+    <style>
+        body {
+            background-image: url("2.jpg");
+            background-size: cover;
+        }
+
+        #box {
+            height: 450px;
+            width: 450px;
+            border: 7px none rgb(217, 0, 255);
+            background-image: url("ooo.jpeg");
+            background-size: cover;
+            margin-top: 60px;
+            margin-left: 565px;
+            align-items: center;
+        }
+
+        p {
+            display: inline;
+            color: white;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            padding-left: 90px;
+        }
+
+        button {
+            background-color: white;
+        }
+
+        #btn {
+            margin-left: 50px;
+            padding-bottom: 50px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1><u>Sign Up FOR FREE&hearts;</u></h1><br>
+        <form id="signupForm">
+            <div><b>
+                <pre>
+<p>Name :             </p><input type="text" id="name" placeholder="Enter your name"><br><br>
+<p>Phone Number :     </p><input type="text" id="phone" placeholder="Enter your number"><br><br>
+<p>Email :            </p><input type="text" id="email" placeholder="Enter your email"><br><br>
+<p>Password :         </p><input type="password" id="password" placeholder="Enter your password"><br><br>
+<p>Re-type Password : </p><input type="password" id="rePassword" placeholder="Re-type your password"><br><br>
+            </div>
+        </form>
+        
+        <div id="btn">
+            <button type="submit" id="submitBtn" style="background-color: orange;">Submit</button>
+            <button type="reset" style="background-color: orange;">Reset</button>
+        </div>
+        
+        <button id="btn5"><a href="index.html" class="back">Back</a></button>
+
+        <div id="errorMessage" class="error"></div>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const rePassword = document.getElementById('rePassword').value;
+
+            // Basic validation
+            if (!name || !phone || !email || !password || !rePassword) {
+                document.getElementById('errorMessage').textContent = 'Please fill in all fields.';
+                return;
+            }
+
+            if (password !== rePassword) {
+                document.getElementById('errorMessage').textContent = 'Passwords do not match.';
+                return;
+            }
+
+            // Data to send to backend
+            const data = {
+                name: name,
+                phone: phone,
+                email: email,
+                password: password
+            };
+
+            // Send data to backend
+            fetch('https://library-management-system-backend-6sda.onrender.com/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log(data)
+                    alert('Sign-up successful!');
+                    window.location.href = 'index.html'; // Redirect to home page after success
+                } else {
+                    document.getElementById('errorMessage').textContent = data.message || 'Something went wrong, please try again.';
+                }
+            })
+            .catch(error => {
+                document.getElementById('errorMessage').textContent = 'Network error: Unable to connect to the server.';
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+
+</html>
+>>>>>>> upstream/master
